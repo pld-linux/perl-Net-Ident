@@ -1,4 +1,5 @@
 %include	/usr/lib/rpm/macros.perl
+%define		__find_provides %{_builddir}/Net-Ident-%{version}/find-perl-provides
 Summary:	Net-Ident perl module
 Summary(pl):	Modu³ perla Net-Ident
 Name:		perl-Net-Ident
@@ -8,6 +9,7 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Ident-%{version}.tar.gz
+Patch:		perl-Net-Ident-dep.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -22,6 +24,9 @@ Net-Ident - Ident w perlu.
 
 %prep
 %setup -q -n Net-Ident-%{version}
+%patch -p1
+
+chmod +x find-perl-provides
 
 %build
 perl Makefile.PL
