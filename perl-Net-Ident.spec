@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	Ident
+%define		pdir	Net
+%define		pnam	Ident
 Summary:	Net::Ident perl module
 Summary(pl):	Modu³ perla Net::Ident
 Name:		perl-Net-Ident
