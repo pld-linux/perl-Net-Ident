@@ -3,14 +3,14 @@
 Summary:	Net-Ident perl module
 Summary(pl):	Modu³ perla Net-Ident
 Name:		perl-Net-Ident
-Version:	1.10
-Release:	3
-Copyright:	GPL
+Version:	1.20
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Ident-%{version}.tar.gz
 Patch:		perl-Net-Ident-dep.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -29,7 +29,7 @@ Net-Ident - Ident w perlu.
 chmod +x find-perl-provides
 
 %build
-perl Makefile.PL
+yes "" | perl Makefile.PL
 make
 
 %install
