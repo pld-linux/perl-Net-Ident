@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Ident
-Summary:	Net-Ident perl module
-Summary(pl):	Modu³ perla Net-Ident
+Summary:	Net::Ident perl module
+Summary(pl):	Modu³ perla Net::Ident
 Name:		perl-Net-Ident
 Version:	1.20
 Release:	7
@@ -17,10 +17,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoprov	"perl(FileHandle)"
 
 %description
-Net-Ident - Perl Ident.
+Net::Ident - Perl Ident.
 
 %description -l pl
-Net-Ident - Ident w perlu.
+Net::Ident - Ident w perlu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
