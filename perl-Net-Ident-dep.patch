@@ -1,0 +1,11 @@
+--- Net-Ident-1.10.prov/find-perl-provides	Thu Jan  1 01:00:00 1970
++++ Net-Ident-1.10/find-perl-provides	Sat Nov  6 16:28:21 1999
+@@ -0,0 +1,8 @@
++#!/bin/sh
++ulimit -c 0
++
++filelist=`sed "s/['\"]/\\\&/g"`
++
++echo $filelist|/usr/lib/rpm/find-provides
++/usr/lib/rpm/perl.prov $filelist | grep -v "perl(FileHandle)"
++
