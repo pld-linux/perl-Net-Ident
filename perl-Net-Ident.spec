@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Ident
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net-Ident perl module
 Summary(pl):	Modu³ perla Net-Ident
 Name:		perl-Net-Ident
 Version:	1.20
-Release:	6
-
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +23,7 @@ Net-Ident - Perl Ident.
 Net-Ident - Ident w perlu.
 
 %prep
-%setup -q -n Net-Ident-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 yes "" | perl Makefile.PL
