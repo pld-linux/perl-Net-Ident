@@ -5,7 +5,7 @@ Summary:	Net::Ident perl module
 Summary(pl):	Modu³ perla Net::Ident
 Name:		perl-Net-Ident
 Version:	1.20
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
