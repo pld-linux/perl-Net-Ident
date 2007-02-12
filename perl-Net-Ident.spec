@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	Ident
 Summary:	Net::Ident perl module
-Summary(pl):	Modu≥ perla Net::Ident
+Summary(pl.UTF-8):   Modu≈Ç perla Net::Ident
 Name:		perl-Net-Ident
 Version:	1.20
 Release:	9
@@ -25,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Net::Ident - Perl Ident.
 
-%description -l pl
+%description -l pl.UTF-8
 Net::Ident - Ident w perlu.
 
 %prep
