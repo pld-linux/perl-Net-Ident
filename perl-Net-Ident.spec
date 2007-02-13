@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	Ident
 Summary:	Net::Ident perl module
-Summary(pl.UTF-8):   Moduł perla Net::Ident
+Summary(pl.UTF-8):	Moduł perla Net::Ident
 Name:		perl-Net-Ident
 Version:	1.20
 Release:	9
