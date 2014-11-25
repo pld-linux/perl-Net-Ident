@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Net
 %define		pnam	Ident
+%include	/usr/lib/rpm/macros.perl
 Summary:	Net::Ident perl module
 Summary(pl.UTF-8):	Moduł perla Net::Ident
 Name:		perl-Net-Ident
@@ -15,8 +15,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f9a2943dc6310c1f31458c49f926b007
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Net-Ident/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
