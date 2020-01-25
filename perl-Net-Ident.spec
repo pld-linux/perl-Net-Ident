@@ -4,7 +4,6 @@
 
 %define		pdir	Net
 %define		pnam	Ident
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::Ident perl module
 Summary(pl.UTF-8):	Moduł perla Net::Ident
 Name:		perl-Net-Ident
