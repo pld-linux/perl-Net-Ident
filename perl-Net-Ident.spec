@@ -8,7 +8,7 @@ Summary:	Net::Ident perl module
 Summary(pl.UTF-8):	Moduł perla Net::Ident
 Name:		perl-Net-Ident
 Version:	1.23
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
