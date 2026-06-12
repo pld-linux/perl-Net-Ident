@@ -7,13 +7,13 @@
 Summary:	Net::Ident perl module
 Summary(pl.UTF-8):	Moduł perla Net::Ident
 Name:		perl-Net-Ident
-Version:	1.23
-Release:	2
+Version:	1.31
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f9a2943dc6310c1f31458c49f926b007
+# Source0-md5:	d6c9047a79dd1c904fba3098c5aba2fb
 URL:		http://search.cpan.org/dist/Net-Ident/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -49,6 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes README.md
 %{perl_vendorlib}/Net/Ident.pm
 %{_mandir}/man3/*
